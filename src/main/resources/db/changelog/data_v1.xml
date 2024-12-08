@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="fill_limits_table" author="3301">
+
+        <insert tableName="limits">
+            <column name = "user_id" value="1"/>
+        </insert>
+
+        <insert tableName="limits">
+            <column name = "user_id" value="2"/>
+        </insert>
+
+        <insert tableName="limits">
+            <column name = "user_id" value="3"/>
+        </insert>
+
+        <insert tableName="limits">
+            <column name = "user_id" value="4"/>
+        </insert>
+
+        <insert tableName="limits">
+            <column name = "user_id" value="5"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

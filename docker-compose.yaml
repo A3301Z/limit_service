@@ -1,0 +1,10 @@
+services:
+  limit_postgres:
+    image: 'postgres:latest'
+    container_name: limit_db
+    environment:
+      - 'POSTGRES_DB=limits'
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=0000'
+    ports:
+      - "5432:5432"
